@@ -9,8 +9,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 public class Pedidos {
     
 
-
-
     @Id
     private String id;
 
