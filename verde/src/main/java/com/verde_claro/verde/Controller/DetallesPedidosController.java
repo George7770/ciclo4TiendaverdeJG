@@ -50,14 +50,14 @@ public class DetallesPedidosController {
 		
 		if (!op.isEmpty()) {
 			DetallesPedidos PedidosUpdate = op.get();
-			PedidosUpdate.setprecioBrutoVenta(DetallesPedidos.getprecioBrutoVenta());
-			PedidosUpdate.setdescuento(DetallesPedidos.getdescuento());
-            PedidosUpdate.setiva(DetallesPedidos.getiva());
-			PedidosUpdate.setprecioNetoVenta(DetallesPedidos.getprecioNetoVenta());
-			PedidosUpdate.setEstado(DetallesPedidos.getestado());
+			PedidosUpdate.setPrecioBrutoVenta(detallesPedidos.getPrecioBrutoVenta());
+			PedidosUpdate.setDescuento(detallesPedidos.getDescuento());
+            PedidosUpdate.setIva(detallesPedidos.getIva());
+			PedidosUpdate.setPrecioNetoVenta(detallesPedidos.getPrecioNetoVenta());
+			PedidosUpdate.setEstado(detallesPedidos.getEstado());
 			return service.save(PedidosUpdate);
 		}
-			return DetallesPedidos;
+			return detallesPedidos;
 	}
 	
 	@DeleteMapping("{id}")

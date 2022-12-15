@@ -50,12 +50,12 @@ public class PedidosController {
 		
 		if (!op.isEmpty()) {
 			Pedidos PedidosUpdate = op.get();
-			PedidosUpdate.setestadoPedido(pedidos.getestadoPedido());
-			PedidosUpdate.setfechaPedido(pedidos.getfechaPedido());
-			PedidosUpdate.setprecioBrutoVenta(pedidos.getprecioBrutoVenta());
-			PedidosUpdate.setdescuento(pedidos.getdescuento());
-			PedidosUpdate.setiva(pedidos.getiva());
-			PedidosUpdate.setprecioNetoVenta(pedidos.getprecioNetoVenta());
+			PedidosUpdate.setEstadoPedido(pedidos.getEstadoPedido());
+			PedidosUpdate.setFechaPedido(pedidos.getFechaPedido());
+			PedidosUpdate.setPrecioBrutoVenta(pedidos.getPrecioBrutoVenta());
+			PedidosUpdate.setDescuento(pedidos.getDescuento());
+			PedidosUpdate.setIva(pedidos.getIva());
+			PedidosUpdate.setPrecioNetoVenta(pedidos.getPrecioNetoVenta());
 			PedidosUpdate.setEstado(pedidos.getEstado());
 			return service.save(PedidosUpdate);
 		}
